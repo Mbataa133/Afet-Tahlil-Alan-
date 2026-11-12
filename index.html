@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#102b35">
+<meta name="theme-color" content="#102b35">\n<link rel="manifest" href="manifest.webmanifest">
 <meta name="description" content="Melikgazi için açık harita verileriyle afet hazırlığı ve yardım noktası keşif prototipi.">
 <title>AfetYol AI | Melikgazi Afet Destek Haritası</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
@@ -64,5 +64,5 @@ $('searchBtn').addEventListener('click',searchPlace);$('searchBox').addEventList
 $('dataStatus').textContent='Açık veri prototipi';
 })();
 </script>
-</body>
+<script src="app-enhancements.js"></script>\n<script>if("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("./sw.js").catch(()=>{});</script>\n</body>
 </html>
