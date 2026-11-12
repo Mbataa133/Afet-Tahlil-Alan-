@@ -1,0 +1,10 @@
+{
+  "name": "AfetYol AI",
+  "short_name": "AfetYol",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0a171c",
+  "theme_color": "#102b35",
+  "lang": "tr",
+  "description": "Melikgazi afet hazırlık ve harita prototipi"
+}
