@@ -48,3 +48,28 @@ Bu servisler herkese açık altyapılardır; kullanım limitleri, kesinti ve ver
 ## Yerel çalıştırma
 
 index.html dosyasını tarayıcıda açabilirsin. Konum özelliği ve bazı tarayıcı API'leri için HTTPS veya yerel sunucu gerekebilir. GitHub Pages HTTPS üzerinden sunar.
+
+
+## Yeni arayüz ve prototip geliştirmeleri
+
+İlk geliştirme paketi:
+- Kontrol merkezi ve ana gezinme.
+- Koyu/açık tema tercihi.
+- Tarayıcıda üretilen basit ses efektleri.
+- Destekleyen tarayıcılarda sesli komut ve metin okuma.
+- Sentetik ağ üzerinde Dijkstra/A* algoritma denemesi.
+- Veri kaynakları ve sınırlamalar ekranı.
+- PWA manifesti ve uygulama kabuğu için Service Worker önbelleği.
+
+### Henüz tamamlanmayan / doğrulanmayan işler
+- Service Worker yalnızca aynı kaynaktaki uygulama dosyalarını önbelleğe alır. Harita karoları, Overpass, Nominatim ve rota servisi çevrimdışı çalışmaz.
+- PWA yükleme deneyimi tarayıcı/cihaz desteğine bağlıdır; simge dosyaları ve gerçek cihaz testi ayrıca gereklidir.
+- Çoklu dil için arayüz altyapısı hazırlanmıştır; bütün metinlerin çevirisi tamamlanmamıştır.
+- Sesli komut ve sesli okuma Web Speech API desteğine ve mikrofon iznine bağlıdır.
+- Alternatif rota, çoklu hedef rotası ve gerçek harita üzerinde algoritma kıyaslaması henüz tamamlanmamıştır.
+- Nüfus yoğunluğu, mahalle risk analizi, resmî uyarı, doğrulanmış toplanma alanları ve hasar/yol bildirimi için doğrulanmış kaynak ve/veya sunucu tarafı doğrulama altyapısı gerekir.
+- Kullanıcı hesabı, gönüllü yönetimi, yönetici onayı ve fotoğraflı bildirim için güvenli backend, kimlik doğrulama, depolama ve moderasyon gerekir.
+- PDF/Excel raporları henüz yoktur; bu sürüm temel CSV dışa aktarma sunar.
+- 3D harita, alan ölçümü, çok kriterli optimizasyon ve yardım dağıtım planlayıcısı henüz eklenmemiştir.
+
+**Test durumu:** Kaynak kodu GitHub'a kaydedildi. Gerçek tarayıcı, mobil cihaz, erişilebilirlik, servis kesintisi ve algoritma performans testleri henüz yapılmadı. Sentetik algoritma testi yalnızca örnek ağda çalışır; gerçek afet rotası veya risk değerlendirmesi değildir.
