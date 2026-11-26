@@ -73,3 +73,25 @@ index.html dosyasını tarayıcıda açabilirsin. Konum özelliği ve bazı tara
 - 3D harita, alan ölçümü, çok kriterli optimizasyon ve yardım dağıtım planlayıcısı henüz eklenmemiştir.
 
 **Test durumu:** Kaynak kodu GitHub'a kaydedildi. Gerçek tarayıcı, mobil cihaz, erişilebilirlik, servis kesintisi ve algoritma performans testleri henüz yapılmadı. Sentetik algoritma testi yalnızca örnek ağda çalışır; gerçek afet rotası veya risk değerlendirmesi değildir.
+
+
+## Araştırma laboratuvarı (yeni prototip)
+
+- Senaryo stres testi: maliyet katsayısının toplam örnek maliyete etkisini gösterir.
+- Basit kaynak dağıtım hesaplayıcısı: örnek taleplere oransal dağıtım yapar.
+- Araştırma kontrol listesi: resmî kaynak, güncellik, kapsam, veri eksikleri ve test adımlarını takip eder.
+- Veri kaynağı sicili: kaynak adı, kontrol tarihi ve doğrulama durumunu yerel olarak kaydeder.
+- Karar günlüğü: proje kararlarını gerekçeleriyle saklar.
+- Deney defteri: stres testi sonuçlarını saklar; JSON ve CSV dışa aktarımı sunar.
+
+Bu modül `research-lab.js` dosyasında bulunur ve tarayıcı `localStorage` alanını kullanır. Veriler cihazlar arasında eşitlenmez; tarayıcı verileri temizlenirse kaybolabilir.
+
+### Yeni fikir havuzu
+- Mahalle bazlı belirsizlik ve veri kapsama haritası.
+- Erişilebilirlik göstergeleri (rampa/kaldırım verisi mevcutsa).
+- Yardım dağıtımında adalet ölçütleri ve talep karşılama oranı.
+- Algoritma açıklanabilirlik kartı: seçilen yolun hangi maliyetlerle oluştuğunu gösterme.
+- Veri güncelliği alarmı ve kaynak değişim geçmişi.
+- Afet senaryosu için nüfus/kapasite duyarlılık analizi; yalnızca güvenilir ve izinli veri bulunduğunda.
+
+**Sınırlar:** Bu hesaplayıcılar örnek/sentetik girdilerle çalışan araştırma araçlarıdır. Resmî afet verisi, gerçek zamanlı ekip yönetimi, güvenli rota kararı veya tahliye talimatı üretmez.
