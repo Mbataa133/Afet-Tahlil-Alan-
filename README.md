@@ -118,3 +118,18 @@ Bu modül `research-lab.js` dosyasında bulunur ve tarayıcı `localStorage` ala
 5. **Veri güvenilirliği ve belirsizlik:** Kaynak kontrolü, güncellik, kapsam ve eksik kayıt girdilerinden şeffaf bir veri hazırlık göstergesi hesaplar.
 
 **Önemli sınırlamalar:** Algoritma ağı, rota alternatifleri ve dağıtım talepleri sentetiktir. A* sezgiseli örnek graf için gösterim amaçlıdır; büyük ağlarda performans veya optimallik iddiası değildir. Erişilebilirlik maliyeti gerçek kaldırım/rampa verisi değildir. Veri göstergesinin ağırlıkları bilimsel olarak kalibre edilmemiştir. Bu araçlar gerçek afet kararı, güvenli rota veya tahliye talimatı üretmez. Gerçek Melikgazi yol ağına geçiş için veri kaynağı, lisans/atıf, ağ temizliği, koordinat eşleştirmesi ve uzman doğrulaması gerekir.
+
+
+## 100 fikirlik geliştirme havuzu
+
+`idea-hub.js` uygulamaya filtrelenebilir 100 fikir kataloğu ekler. Beş uzman bakışının her biri 20 fikir sunar:
+
+- **Atlas:** Harita ve coğrafi veri
+- **Newton:** Matematik ve algoritmalar
+- **Sentinel:** Afet operasyonları ve kaynak planlama
+- **Orion:** Bilimsel doğrulama ve veri kalitesi
+- **Nova:** Kullanıcı deneyimi, erişilebilirlik ve iletişim
+
+Kullanıcı fikirleri arayabilir, uzman rolüne/durumuna göre filtreleyebilir ve Backlog, İnceleniyor, Onaylandı, Geliştiriliyor, Tamamlandı veya Reddedildi durumlarını seçebilir. Durumlar tarayıcının yerel depolamasında saklanır; GitHub'a senkronize edilmez.
+
+**Kapsam notu:** 100 fikir uygulamaya bir geliştirme havuzu olarak eklenmiştir; 100'ünün tamamı çalışan yazılım özelliği olarak uygulanmış değildir. Gerçekleştirme öncesinde veri erişimi, teknik zorluk, güvenlik etkisi, test yöntemi ve bilimsel katkı ayrı ayrı değerlendirilmelidir.
