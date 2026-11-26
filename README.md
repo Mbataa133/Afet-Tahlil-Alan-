@@ -105,3 +105,16 @@ Bu modül `research-lab.js` dosyasında bulunur ve tarayıcı `localStorage` ala
 - Service Worker önbellek sürümü güncellendi.
 
 `ui-polish.js` görsel düzen ve gezinme iyileştirmelerini sağlar. Bu arayüz geliştirmeleri gerçek kullanıcı testi veya erişilebilirlik sertifikasyonu yerine geçmez.
+
+
+## İleri matematik ve optimizasyon merkezi
+
+`advanced-lab.js` ile beş geliştirme prototipi eklendi:
+
+1. **Algoritma performans laboratuvarı:** Dijkstra ve A* yöntemlerini aynı sentetik graf üzerinde tekrar sayısına göre ölçer; süre, ziyaret edilen düğüm ve yol maliyetini gösterir.
+2. **Darboğaz ve graf merkeziyet analizi:** Düğüm derecesi, örnek en kısa yolların ara düğüm kullanımı ve bağlantı kaldırma testiyle köprü bağlantıları inceler. Ara düğüm kullanımı basit bir gösterge olup tam betweenness merkeziyeti değildir.
+3. **Çok amaçlı rota optimizasyonu:** Mesafe, süre ve sentetik erişilebilirlik maliyetini kullanıcı ağırlıklarıyla normalize ederek üç örnek rotayı karşılaştırır.
+4. **Adil yardım dağıtımı:** Max-min adalet yaklaşımıyla örnek taleplerin karşılanma oranlarını eşitlemeye çalışır.
+5. **Veri güvenilirliği ve belirsizlik:** Kaynak kontrolü, güncellik, kapsam ve eksik kayıt girdilerinden şeffaf bir veri hazırlık göstergesi hesaplar.
+
+**Önemli sınırlamalar:** Algoritma ağı, rota alternatifleri ve dağıtım talepleri sentetiktir. A* sezgiseli örnek graf için gösterim amaçlıdır; büyük ağlarda performans veya optimallik iddiası değildir. Erişilebilirlik maliyeti gerçek kaldırım/rampa verisi değildir. Veri göstergesinin ağırlıkları bilimsel olarak kalibre edilmemiştir. Bu araçlar gerçek afet kararı, güvenli rota veya tahliye talimatı üretmez. Gerçek Melikgazi yol ağına geçiş için veri kaynağı, lisans/atıf, ağ temizliği, koordinat eşleştirmesi ve uzman doğrulaması gerekir.
