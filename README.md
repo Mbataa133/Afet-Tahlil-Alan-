@@ -95,3 +95,13 @@ Bu modül `research-lab.js` dosyasında bulunur ve tarayıcı `localStorage` ala
 - Afet senaryosu için nüfus/kapasite duyarlılık analizi; yalnızca güvenilir ve izinli veri bulunduğunda.
 
 **Sınırlar:** Bu hesaplayıcılar örnek/sentetik girdilerle çalışan araştırma araçlarıdır. Resmî afet verisi, gerçek zamanlı ekip yönetimi, güvenli rota kararı veya tahliye talimatı üretmez.
+
+## Arayüz iyileştirmeleri
+
+- Daha belirgin başlık ve kart hiyerarşisi, mobil uyumlu istatistik kartları.
+- Klavye ile erişilebilir odak göstergeleri ve azaltılmış hareket tercihi.
+- Araştırma laboratuvarı için bölüm gezinmesi ve komut arama penceresi (Ctrl/⌘ + K).
+- Yazdırılabilir rapor görünümü.
+- Service Worker önbellek sürümü güncellendi.
+
+`ui-polish.js` görsel düzen ve gezinme iyileştirmelerini sağlar. Bu arayüz geliştirmeleri gerçek kullanıcı testi veya erişilebilirlik sertifikasyonu yerine geçmez.
